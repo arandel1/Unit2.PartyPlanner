@@ -36,13 +36,13 @@ async function createParty (e) {
   // console.log(name)
   const description = addPartyForm.description.value
   // console.log(description)
-  const date = addPartyForm.date.value + "09.000Z";
+  const date = addPartyForm.date.value + ":00.000Z";
   // console.log(date)
   const location = addPartyForm.location.value
   // console.log(location)
 
   try {
-    // post party data
+    // post party data 
     const response = await fetch(API_URL, {
       method: 'POST',
       headers: { 'Content-Type' : 'application/json' },
